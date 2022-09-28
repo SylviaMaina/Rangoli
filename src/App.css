@@ -1,38 +1,253 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+.heading{
+  width: 100%;
+  height: 4rem;
+  background-color: #840c01;
+}
+.heading h2{
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1rem;
   text-align: center;
+  letter-spacing: normal;
+  font-weight: 400;
+  padding: 1rem;
+}
+ .welcome{
+  background-image: url("./Media/rangoli.jpg");
+  background-color: #862222; 
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  padding-top: 2rem;
+} 
+.intro{
+  background: rgba(255, 255, 255, 0.2);
+  width: 40%;
+  height: 15rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.intro h6{
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+.intro h2,.cards h2{
+  text-align: center;
+  font-weight: 500;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.About{
+  width: 80%;
+  display:flex;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: justify;
+}
+.About img{
+  width: 50%;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.About h6{
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.compete{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+ .compete button{
+  width: 10rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color:#840c01;
+  border: none;
+  margin-bottom: 1rem;
+  outline: 1px solid #840c01;
+  border-radius: 1rem;
+  background-color: transparent;
+  align-items: center;
+}
+.buttons{
+  width: 10rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color:#840c01;
+  color: #fff;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+.cards{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+  margin-top: 2rem;
+}
+.grid img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item-0 { 
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item-2 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.item-3 { 
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.item-4 { 
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.item-5 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.item-6 { 
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 11;
+}
+.footer{
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color:#840c01;
+}
+.infos{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: 3rem;
+  justify-content: space-between;
+}
+.infos h2{
+  color: #fff;
+  margin: 2rem;
+}
+.infos h6{
+  margin: 2rem;
+  font-size: 0.8rem;
+  align-items: center;
+  color: #fff;
+}
+.socials{
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin:-2rem 0rem 0rem 5rem;
+  justify-content: space-between;
+}
+.copy{
+  color: #fff;
+  margin:2rem 0rem 0rem 5rem;
+}
+a{
+  color: #fff;
+}
+a :hover{
+  color: rgb(180, 45, 33);
+}
+form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  width:100%;
+  height: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  width:100%;
+  height: 8rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+}
+fieldset{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.label1{
+  margin: 1rem;
+}
+.label1 input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: -1rem;
+}
+@media(max-width: 1000px){
+ .grid{
+    display: block;
+ }
+ .About{
+  display: block;
+ }
+ .About img{
+  width: 100%;
+  margin: 0 auto;
+ }
+ .intro{
+  width: 65%;
+ }
 }
