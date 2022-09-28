@@ -230,11 +230,11 @@ fieldset{
 .label1{
   margin: 1rem;
 }
-.label1 input{
+.label1 label{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: -1rem;
+  padding-top: -1.5rem;
 }
 @media(max-width: 1000px){
  .grid{

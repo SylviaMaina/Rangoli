@@ -34,7 +34,7 @@ function App() {
     number: "",
     email: "",
     request: "",
-    payment: "",
+    level: "",
   });
 
   function handleChange(event) {
@@ -92,7 +92,7 @@ function App() {
             metre provided by default.
           </h6>
           <div className="button">
-            <button>Register to compete</button>
+            <button onClick={handleShow}>Register to compete</button>
           </div>
         </div>
       </div>
@@ -244,6 +244,7 @@ function App() {
             action="https://formsubmit.co/sylviamaina16@gmail.com"
             method="POST"
           >
+            <input type="hidden" name="_captcha" value="false" />
             <label>Name</label>
             <input
               type="text"
@@ -282,25 +283,25 @@ function App() {
             <fieldset>
               <legend>What level are you competing at?</legend>
               <div className="label1">
+                <label>Beginner</label>
                 <input
                   className="input"
                   type="radio"
                   id="beginner"
-                  name="payment"
+                  name="level"
                   value="beginner"
-                  checked={formData.payment === "beginner"}
+                  checked={formData.level === "beginner"}
                   onChange={handleChanges}
                 />
-                <label>Beginner</label>
               </div>
               <div className="label1">
                 <input
                   className="input"
                   type="radio"
                   id="intermediate"
-                  name="payment"
+                  name="level"
                   value="intermediate"
-                  checked={formData.payment === "intermediate"}
+                  checked={formData.level === "intermediate"}
                   onChange={handleChanges}
                 />
                 <label>Intermediate</label>
@@ -310,9 +311,9 @@ function App() {
                   className="input"
                   type="radio"
                   id="expert"
-                  name="payment"
+                  name="level"
                   value="expert"
-                  checked={formData.payment === "expert"}
+                  checked={formData.level === "expert"}
                   onChange={handleChanges}
                 />
                 <label>Expert</label>
